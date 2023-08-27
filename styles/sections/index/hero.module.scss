@@ -3,7 +3,6 @@
 //global.module.scss
 .section {
 	border-bottom: 1px solid var(--primary-dark);
-	
 	max-height: 1440px;
 	height: 100vh;
 	justify-content: center;
@@ -97,12 +96,18 @@
 		max-inline-size: unset;
 		max-block-size: unset;
 	}
-	
+
 	.radialContainer {
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		
+		.heroImg{
+			background-size: cover; 
+			background-repeat: no-repeat; 
+			background-position: left;
+		}
+
 		.radialGradient {
 			position: absolute;
 			right: -30%;

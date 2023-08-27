@@ -32,7 +32,6 @@ $background: 	--background-dim2;
 		align-items: center;
 		border-radius: 9rem;
 		@include buttonPadding( var(--size-3-) );
-		text-transform: uppercase;
 
 		color: var(--primary-dim);
 		
@@ -95,8 +94,7 @@ $background: 	--background-dim2;
 			font-size: .9rem;
 			font-weight: 600;
 			border-radius: .5rem;
-			width: calc(50% - 0.25rem);
-			text-transform: capitalize;
+			width: calc(100% - 0.35rem);
 			
 			&:before,
 			&:after {

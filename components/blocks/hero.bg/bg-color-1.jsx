@@ -6,6 +6,7 @@ import Image from 'next/image'
  * /styles/blocks/hero.bg.module.scss
  */
 import hero from '../../../styles/sections/index/hero.module.scss';
+import heroImg from '../../../public/img/growth.png'
 
 export default function bgColor1() {
 	return (
@@ -14,7 +15,7 @@ export default function bgColor1() {
 				<div className={`${hero.barGradient}`}></div>
 			</div>
 			<div className={`${hero.radialContainer} noEvents`}>
-				{/* <Image src="/img/dataism-24.svg" className={`${hero.svg_background}`} height={2000} width={2000} alt="Dataism 24 by Colorpong: https://ywft.us/2c4d58b21" /> */}
+				{/* <Image src={heroImg} alt="hero" className={hero.radialContainer.heroImg} height={700} width={700}/> */}
 				<div className={`${hero.radialGradient}`}></div>
 			</div>
 		</div>

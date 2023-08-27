@@ -28,22 +28,25 @@ export default function Technical() {
 		<Section classProp={`${about.section} borderBottom`}>	
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="Technical"
-					preTitle="Hardskills"
-					subTitle="As a creative technologist, I craft intuitive digital experiences using a diverse set of tools and languages."
+					title="Non-Technical"
+					preTitle="Softskills"
+					subTitle="Soft skills, combined with my technical expertise, make me a well-rounded software developer."
 				/>
-				<section className={`${about.content} ${about.container}`}>
+				<section className={`${about.technicalContent} ${about.container}`}>
 					<div className={about.copy}>
-						<CopyBlock 
-							title="Polymath foundations"
+						{/* <CopyBlock 
+							title="Softskills I've gained so far"
 							icon={[ 'fat', 'chart-network' ]}
-							copy="With a strong foundation in both design and development, I bring a unique perspective to every project and am constantly learning and evolving to stay up-to-date with the latest industry trends."
-							iconClass={about.icon}
+							copy="As a seasoned software developer, I bring more to the table than just technical expertise. I understand that the success of any project relies not only on technical prowess but also on effective communication, teamwork, and problem-solving skills."
 							containerClass={about.container}
-						/>
+							list={software}
+							block="software" 
+							fullContainer="fullContainer"
+							headerIcon={about.icon}
+						/> */}
 						<BadgesBlock 
-							title="Software I love to work with" 
-							copy="With over 20 years of experience creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time."
+							title="Softskills I've gained so far" 
+							copy="As a seasoned software developer, I bring more to the table than just technical expertise. I understand that the success of any project relies not only on technical prowess but also on effective communication, teamwork, and problem-solving skills."
 							list={software}
 							block="software" 
 							fullContainer="fullContainer"
@@ -52,8 +55,8 @@ export default function Technical() {
 							headerIcon={about.icon} 
 						/>
 						<BadgesBlock 
-							title="Technologies I love to build with" 
-							copy="I deeply enjoy solving problems through code. From the front end all the way to the back end and the APIs in-between. No project is too challenging for me."
+							title="Software I'm great with" 
+							copy="In my journey as a software developer, I've gained proficiency in a wide array of technologies that enable me to deliver robust and efficient solutions. I'm always eager to learn and adapt to new technologies to stay at the forefront of the ever-evolving tech landscape."
 							list={tech} 
 							block="tech"
 							fullContainer="fullContainer" 
@@ -62,9 +65,9 @@ export default function Technical() {
 							headerIcon={about.icon} 
 						/>							
 					</div>
-					<div className={`${about.image} ${about.technicalSvg}`}>
+					{/* <div className={`${about.image} ${about.technicalSvg}`}>
 						<Image src="/img/dataism-24.svg" width={477} height={1111} alt="Data Strings 01 by Colorpong: https://ywft.us/2177b695b" />
-					</div>
+					</div> */}
 				</section>	
 			</Container>
 			{/* <SectionGridBg gridSize={4}/> */}
@@ -72,16 +75,17 @@ export default function Technical() {
 	)
 }
 
-const software = [
-	{ key: 'photoshop', 	name: 'Photoshop', 			type: 'devicon' },
-	{ key: 'illustrator', 	name: 'Illustrator', 		type: 'devicon' },
-	{ key: 'figma', 		name: 'Figma', 				type: 'devicon' },
-	{ key: 'vscode', 		name: 'VSCode', 			type: 'devicon' },
-	{ key: 'mailbox', 		name: 'Postman', 			type: 'fas' },
-	{ key: 'computer-mouse',name: 'Click Up', 			type: 'fas' },
-	{ key: 'list-music',	name: 'Ableton', 			type: 'fas' },
-	{ key: 'aftereffects',	name: 'After Effects', 		type: 'devicon' },
-	{ key: 'premierepro',	name: 'Premiere Pro', 		type: 'devicon' },
+const software 	= [
+	{ key: 'comments', name: 'Communication', type: 'fad' },
+	{ key: 'users', name: 'Teamwork', type: 'fad' },
+	{ key: 'sync-alt', name: 'Adaptability', type: 'fad' },
+	{ key: 'lightbulb', name: 'Problem Solving', type: 'fad' },
+	{ key: 'chess-king', name: 'Leadership', type: 'fad' },
+	{ key: 'clock', name: 'Time Management', type: 'fad' },
+	{ key: 'paint-brush', name: 'Creativity', type: 'fad' },
+	{ key: 'handshake', name: 'Conflict Resolution', type: 'fad' },
+	{ key: 'brain', name: 'Emotional Intelligence', type: 'fad' },
+	{ key: 'user-friends', name: 'Interpersonal Skills', type: 'fad' },
 ]
 
 const tech	= [
@@ -89,10 +93,10 @@ const tech	= [
 	{ key: 'nodejs', 		name: 'NodeJS', 			type: 'devicon' },
 	{ key: 'react', 		name: 'React', 				type: 'devicon' },
 	{ key: 'nextjs', 		name: 'NextJS', 			type: 'devicon' },
-	{ key: 'jquery', 		name: 'jQuery', 			type: 'devicon' },
+	{ key: 'python', 		name: 'Python', 			type: 'devicon' },
 	{ key: 'php', 			name: 'PHP', 				type: 'devicon' },
-	{ key: 'wordpress', 	name: 'WordPress', 			type: 'devicon' },
-	{ key: 'woocommerce', 	name: 'WooCommerce', 		type: 'devicon' },
+	{ key: 'tailwindcss', 	name: 'TailwindCSS', 		type: 'devicon' },
+	{ key: 'androidstudio', 	name: 'Android Studio', 		type: 'devicon' },
 	{ key: "google",		name: "GA4/GTM", 			type: "devicon" },
 	{ key: 'html5', 		name: 'HTML5', 				type: 'devicon' },
 	{ key: 'css3', 			name: 'CSS3', 				type: 'devicon' },

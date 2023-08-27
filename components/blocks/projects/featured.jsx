@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import Link from 'next/link'
 import { useEffect } from 'react'
 import { m, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
@@ -29,11 +29,10 @@ export default function FeaturedProject({ content }, index) {
 		<m.section 	
 			key={index}
 			className={css.project} 
-			//framer-motion
+			framer-motion
 			ref={ref}
 			variants={container}
 			initial={[ "rest", "hidden" ]}
-			whileHover="hover"
 			animate={controls} >
 			
 			<div className={css.details}>
@@ -48,24 +47,30 @@ export default function FeaturedProject({ content }, index) {
 						<Badges list={stack} block="stack" fullContainer={false} color={false} />
 					</div>
 					<m.div variants={''} className={css.viewProject}>
-						<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
+						<Link href={url}>
+							<a target="_blank" rel="noopener noreferrer">
+								<Icon icon={['fad', 'arrow-right-to-bracket']} />
+							</a>
+						</Link>
 					</m.div>
 				</div>
 			</div>
 
 			<div className={css.imageContainer}>
-				<span className={`${css.imageAnimationContainer}`}>
 					{ images.map( ({key, url, hover, h, w }, index) => {
 						hover = ( hover === 'left' ) ? hoverLeft : hoverRight
 						return (
-							<m.div key={`${index}-${key}`} variants={item}>
-								<m.div variants={hover}>
-									<Image src={url} alt="x" height={h} width={w} />
-								</m.div>
+							<m.div  key={`${index}-${key}`} variants={item}>
+								<Link href={content.url}>
+									<a target="_blank" rel="noopener noreferrer">
+										<m.div variants={hover}>
+											<Image src={url} alt="x" height={h} width={w} />
+										</m.div>
+									</a>
+								</Link>
 							</m.div>
 						)}
 					) }
-				</span>
 			</div>
 		</m.section>
 	)

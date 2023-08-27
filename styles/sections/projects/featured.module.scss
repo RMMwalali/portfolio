@@ -23,15 +23,12 @@
 	}
 
 	&:hover {
-		cursor: pointer;
-
 		.viewProject svg {
 			@include transition;
 			color: var(--neon-1-1);
 		}
 	}
 }
-
 
 .projectHeader  {
 	display: flex;
@@ -109,13 +106,16 @@
 	border-radius: 1rem;
 	flex-grow: 1;
 	flex-shrink: 0;
+	margin-top: 90px;
+	margin-right: 30px;
+	margin-left: 30px;
 
 	.imageAnimationContainer {
 		position: absolute;
 		overflow: hidden;
 		border-radius: 2rem;
-		height: calc(100% - 6rem);
-		width: calc(100% + 9rem);
+		height: 100%;
+		width: 100%;
 		right: 0;
 		bottom: 0;
 

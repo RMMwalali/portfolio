@@ -30,30 +30,30 @@ export default function About() {
 				<SectionTitle
 					title="About Me"
 					preTitle="Synopsis"
-					subTitle="With a diverse skill set that includes UX design, UI design, full stack development, operational architecture, systems design, photography, and branding, I am a well-rounded digital professional."
+					subTitle="I possess a wide range of skills, including the ability to design user interfaces and user experiences, develop full stack applications, architect systems and operations, and create effective email marketing campaigns. I am also highly creative and detail-oriented, always staying up-to-date with the latest news and trends on the internet."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-						<img src="/img/family-photo.jpg" alt="Nelson family photo"/>
-						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
+						{/* <img src="/img/growth.png" alt="Nelson family photo"/> */}
+						<Image src="/img/growth.png" width={600} height={1000}/>
 					</div>
 					<div className={about.copy} >
 						<CopyBlock 
-							title="Softskills that pay the bills"
+							title="Get to know me."
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={[ 'fat', 'ear-listen' ]}
-							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner, husband, and father of two. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project."
+							copy="👋 Hi, for the second time today; I’m a really passionate software developer. In my free time, I enjoy reading newsletters and blogs about finance 💰 and technology 💻, as well as watching movies 🎥 (I’ve probably seen them all!). My dream job is to become a data scientist 📊 because of my love for mathematics, python 🔢 and my natural inclination to analyze things 🔍, even in my day-to-day life. 😊"
 						/>
 						<BadgesBlock 
-							title="Reasearch and planning" 
+							title="My Contact Information" 
 							containerClass={about.container}
 							list={methods} 
 							fullContainer="fullContainer"
 							block="methods" 
 							icon="fingerprint"
-							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
-							//invertedColor="invertedColor"
+							// copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
+							invertedColor="invertedColor"
 							headerIcon={`${about.icon}`}
 						/>
 					</div>
@@ -64,10 +64,8 @@ export default function About() {
 }
 
 const methods 	= [
-	{ key: 'planet-moon', 		name: 'User Research', 		type: 'fad' },
-	{ key: 'qrcode', 			name: 'Digital Strategy', 	type: 'fad' },
-	{ key: 'window', 			name: 'Design Systems', 	type: 'fad' },
-	{ key: 'cubes', 			name: 'Product Strategy', 	type: 'far' },
-	{ key: 'layer-plus', 		name: 'Brand Strategy', 	type: 'fad' },
-	{ key: 'solar-system', 		name: 'Operations', 		type: 'fad' },
+	{ key: 'phone', name: '+254742310406', type: 'fad' },
+	{ key: 'qrcode', name: 'https://rmmwalali.vercel.app/', type: 'fad' },
+	{ key: 'envelope', name: 'ruthmwende317@gmail', type: 'fad' },
+	{ key: 'location', name: 'Nairobi, Kenya', type: 'fad' },
 ]

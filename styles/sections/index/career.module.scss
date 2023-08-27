@@ -2,7 +2,9 @@
 @import '../../scss/mixins';
 
 .section {
-
+	.button{
+		align-self: center;
+	}
 	.area {
 		display: flex;
 		flex-direction: column;
