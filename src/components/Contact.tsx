@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react'
 const contacts = [
   { label: 'Email', value: 'ruthmwende317@gmail.com', href: 'mailto:ruthmwende317@gmail.com' },
   { label: 'Phone', value: '+254 742 310406', href: 'tel:+254742310406' },
+  { label: 'WhatsApp', value: '+254 742 310406', href: 'https://wa.me/254742310406' },
   { label: 'GitHub', value: 'github.com/rmmwalali', href: 'https://github.com/rmmwalali' }
 ]
 
