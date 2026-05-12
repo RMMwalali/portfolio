@@ -72,7 +72,6 @@ nav {
 }
 .nav-links {
   display: flex; gap: 2rem; list-style: none;
-  margin-right: 3rem;
 }
 .nav-links a {
   font-family: var(--mono);
