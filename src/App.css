@@ -540,8 +540,8 @@ footer {
 
 /* Mobile */
 @media (max-width: 768px) {
-  nav { padding: 1.2rem 1.5rem; }
-  .nav-links { display: none; }
+  nav { padding: 1.2rem 1.5rem; justify-content: space-between; }
+  .nav-links { display: none; margin-right: 0; }
   .nav-cta { font-size: 10px; padding: 0.45rem 1rem; }
   
   .hero { padding: 0 1.5rem 4rem; min-height: 90vh; }
